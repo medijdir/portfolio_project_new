@@ -117,7 +117,7 @@ ul {
     margin-right: 5%;
     
   }
-
+    
   .logo {
     padding: 10px 12px;
     margin-left: 12px;
@@ -135,19 +135,77 @@ ul {
     margin-right: 24px;
   }
 
-  .menutext {
-    color: #344563;
-    padding: 0.8rem;
-  }
-
-  .icon-menu {
+   .icon-menu {
     display: flex;
     justify-content: row;
     padding: 13px 13px;
     margin-left: 13px;
-    
   }
+
+  
 }
+
+
+.toggol_menu {
+  background-color: blue;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0%;
+  top:0%;
+}
+
+.toggol_menu #menu_form {
+  display: none;
+}
+
+.toggol_menu a {
+  color: white;
+  font-size: 25px;
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.Menu_form{
+  margin-top: 16%;
+  margin-left: 3%;
+}
+
+
+<a href="javascript:void(0);" class="icon-menu" onclick="myFunction()">
+    
+  </a>
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .Menu_form {
+    position: absolute;
+    right: 0;
+    height: 92vh;
+    top: 8vh;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  }
+
+
+
+
+
 
 #header_section {
   background-color: white;
